@@ -35,6 +35,13 @@ const KanbanBoard = () => {
     localStorage.setItem("sorting", sorting);
   }, [sorting]);
 
+  useEffect(() => {
+    if (grouping === "user" && users.length === 0) {
+      return; // Don't set headers if users are not yet fetched
+    }
+    setColumnHeaders(getColumnHeaders());
+  }, [grouping, users, tickets]);
+
   const getUserName = (userId) => {
     const user = users.find((user) => user.id === userId);
     return user ? user.name : "Unknown User";
@@ -131,7 +138,7 @@ const KanbanBoard = () => {
 
   const groupedTickets = groupTickets(tickets);
 
-  return (
+  return users.length > 0 && tickets.length > 0 ?(
     <div id="main">
       <div id="navigationPane">
         <Display
@@ -166,7 +173,7 @@ const KanbanBoard = () => {
         </div>
       </div>
     </div>
-  );
+  ):null;
 };
 
 export default KanbanBoard;
