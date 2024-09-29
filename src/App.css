@@ -6,7 +6,10 @@
   /* background-color: antiquewhite; */
   background-color: #f4f5f7;
   overflow:hidden;
+  overflow-y:auto;
+  
 }
+::-webkit-scrollbar { display: none; }
 
 @media(max-width:768px){
   .App{

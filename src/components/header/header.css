@@ -13,7 +13,7 @@
   padding: 0.5rem;
   border-radius: 8px;
  
-  margin-bottom: 0.7rem; /* Spacing from the next element */
+  /* margin-bottom: 0.3rem; Spacing from the next element */
   width:17vw;
 }
 
@@ -60,7 +60,7 @@
     
     width: 30vw; /* Full width on smaller screens */
   }
-  
+
 }
 
 @media (max-width:576px){

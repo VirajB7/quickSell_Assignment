@@ -8,10 +8,10 @@
 #main {
     
     width: 17vw;
-    height:16vh;
+    height:18vh;
     display: flex;
     flex-direction: column;
-    margin-bottom:0.3rem;
+    margin-bottom:0.1rem;
 }
 
 
@@ -39,7 +39,7 @@
     display: flex;
     /* flex-direction:column; */
     align-items: center; /* Center items vertically */
-    margin-bottom: 0.3rem; 
+    margin-bottom: 0.2rem; 
 }
 
 .card-top {
