@@ -7,3 +7,16 @@
   background-color: #f4f5f7;
   overflow:hidden;
 }
+
+@media(max-width:768px){
+  .App{
+    overflow:auto;
+    overflow-x:hidden;
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+  ::-webkit-scrollbar { display: none; }
+}
+

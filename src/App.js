@@ -7,7 +7,7 @@ function App() {
  
   return (
     <div className="App">
-      <KanbanBoard />
+      <KanbanBoard id="kanbanBoard"/>
     </div>
   );
 }

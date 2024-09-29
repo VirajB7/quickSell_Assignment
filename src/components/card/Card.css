@@ -117,6 +117,22 @@
         align-items: center; /* Center columns */
         height: 80%; /* Ensure it still occupies remaining height */
     }
+
+    #main{
+        width: 30vw;
+        height:auto;
+        margin-bottom: 0.5rem;
+        flex-wrap:wrap;
+    }
+}
+
+@media(max-width:576px){
+    #main{
+        width: 42vw;
+        height:auto;
+        margin-bottom: 0.5rem;
+        flex-wrap:wrap;
+    }
 }
 
 @media (max-width: 480px) {
@@ -125,7 +141,15 @@
     }
 
     .card {
+
         margin-bottom: 1rem; /* Space between cards */
+    }
+
+    #main{
+        width:85vw;
+        height:auto;
+        margin-bottom: 0.5rem;
+        flex-wrap:wrap
     }
 
     #ticketID, #bottom2-p {

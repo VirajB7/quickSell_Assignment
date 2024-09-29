@@ -18,18 +18,28 @@
     /* margin-top:10vw; */
     /* background-color: #15e769; */
     display:flex;
-    height:90vh;
+    min-height:90vh;
     width:100vw;
     padding:2vw;
     padding-top:3rem;
 }
 
 #inner_kanban_board{
+    width:100%;
+    position:relative;
     display:flex;
+    /* flex-direction:row; */
+    flex-wrap:wrap;
     gap:1rem;
     /* background-color: #007bff; */
 }
 
+.group{
+    position:relative;
+    /* background-color: black; */
+    
+    flex-wrap:wrap;
+}
 #heading {
     display:flex;
     align-items:center;
@@ -39,19 +49,7 @@
     margin-bottom:1rem;
 }
 
-@media (max-width: 1200px) {
-    .kanban_board {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-    }
-}
 
-@media (max-width: 992px) {
-    .kanban_board {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 @media (max-width: 768px) {
     .kanban_board {
@@ -59,10 +57,25 @@
         align-items: center;
         height: 80%;
     }
+
+    #main {
+        flex-direction:row;
+        flex-wrap:wrap;
+        /* padding:2vw; */
+        /* flex-direction: column; */
+        /* background-color: #007bff; */
+    }
+}
+@media(max-width:576px){
+    #main{
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
 }
 
 @media (max-width: 480px) {
     .kanban_board {
+        
         flex-direction: row;
     }
 
@@ -72,5 +85,10 @@
 
     #ticketID, #bottom2-p {
         font-size: 0.75rem;
+    }
+
+    #main{
+        flex-direction:row;
+        flex-wrap: wrap;
     }
 }

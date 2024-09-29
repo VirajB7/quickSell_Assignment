@@ -1,57 +1,76 @@
 /* General reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f5f7; /* Light background color for header */
+  padding: 0.5rem;
+  border-radius: 8px;
+ 
+  margin-bottom: 0.7rem; /* Spacing from the next element */
+  width:17vw;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.left-svg {
+  width: 1rem; /* Width for the left SVG */
+  height: 1rem; /* Height for the left SVG */
+  margin-right: 0.3rem; /* Spacing between SVG and text */
+}
+
+.term {
+  font-size: 0.8rem; /* Size for the term text */
+  font-weight: bold;
+  margin-right: 0.3rem; /* Space between term and ticket count */
+}
+
+.ticket-count {
+  font-size: 0.8rem; /* Smaller font size for ticket count */
+  color: #6b778c; /* Subtle color for ticket count */
+}
+
+.right-section {
+  display: flex;
+  gap: 0.4rem; /* Space between icons on the right */
+}
+
+.icon {
+  width: 1.5rem; /* Width for the right-side icons */
+  height: 1.5rem; /* Height for the right-side icons */
+  cursor: pointer; /* Show pointer to indicate clickable */
+  transition: transform 0.2s ease; /* Smooth scaling on hover */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+@media (max-width: 768px) {
   .column-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f4f5f7; /* Light background color for header */
-    padding: 0.5rem;
-    border-radius: 8px;
-   
-    margin-bottom: 0.7rem; /* Spacing from the next element */
-    width:17vw;
+    
+    width: 30vw; /* Full width on smaller screens */
   }
   
-  .left-section {
-    display: flex;
-    align-items: center;
+}
+
+@media (max-width:576px){
+  .column-header{
+    width:42vw;
   }
-  
-  .left-svg {
-    width: 1rem; /* Width for the left SVG */
-    height: 1rem; /* Height for the left SVG */
-    margin-right: 0.3rem; /* Spacing between SVG and text */
+}
+
+@media (max-width: 480px) {
+  .column-header {
+    width: 85vw; /* Full width on even smaller screens */
   }
-  
-  .term {
-    font-size: 0.8rem; /* Size for the term text */
-    font-weight: bold;
-    margin-right: 0.3rem; /* Space between term and ticket count */
-  }
-  
-  .ticket-count {
-    font-size: 0.8rem; /* Smaller font size for ticket count */
-    color: #6b778c; /* Subtle color for ticket count */
-  }
-  
-  .right-section {
-    display: flex;
-    gap: 0.4rem; /* Space between icons on the right */
-  }
-  
-  .icon {
-    width: 1.5rem; /* Width for the right-side icons */
-    height: 1.5rem; /* Height for the right-side icons */
-    cursor: pointer; /* Show pointer to indicate clickable */
-    transition: transform 0.2s ease; /* Smooth scaling on hover */
-  }
-  
-  .icon:hover {
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
-  }
-  
+}

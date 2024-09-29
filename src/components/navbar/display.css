@@ -10,16 +10,16 @@
     justify-content: space-evenly;
     align-items:center;
     border: 1px solid #ddd;
-    border-radius: 0.25rem; /* Adjusted from 4px */
+    border-radius: 0.25rem; 
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-    padding: 0.1rem; /* Adjusted from 8px */
+    padding: 0.1rem; 
     cursor: pointer;
-    font-size: 0.7rem; /* Adjusted from 12px */
+    font-size: 0.7rem; 
 }
 
 #display-icon{
-    font-size: 0.3rem; /* Adjusted from 12px */
-    margin-right: 0.3rem; /* Adjusted from 5px */
+    font-size: 0.3rem; 
+    margin-right: 0.3rem;
 }
 
 .display-button:hover {
@@ -35,7 +35,7 @@
     border: 1px solid #ddd;
     z-index: 10; 
     padding: 0.625rem; /* Adjusted from 10px */
-    width:18vw;
+    min-width:18vw;
     display:flex;
     flex-direction:column;
     
@@ -47,23 +47,24 @@
     display:flex;
     justify-content:space-between;
     padding:0.1rem 0.2rem;
-    font-size: 0.85rem; /* Adjusted from 14px */
-    margin-bottom: 0.25rem; /* Adjusted from 10px */
+    font-size: 0.85rem; 
+    margin-bottom: 0.25rem; 
     color: #5d5d5d;
+    min-width:10vw;
 }
 
 #grouping,#sorting{
-    border-radius: 0.25rem; /* Adjusted from 4px */
-    width:8vw;
+    border-radius: 0.25rem; 
+    min-width:8vw;
 }
 
 .dropdown-item label {
-    margin-right: 0.625rem; /* Adjusted from 10px */
+    margin-right: 0.625rem; 
 }
 
 .dropdown-item select {
-    padding: 0.3125rem; /* Adjusted from 5px */
-    font-size: 0.75rem; /* Adjusted from 14px */
+    padding: 0.3125rem; 
+    font-size: 0.75rem; 
 }
 
 .display-navbar {
@@ -87,16 +88,26 @@
 }
 
 .navbar-item {
-    margin-right: 1.25rem; /* Adjusted from 20px */
+    margin-right: 1.25rem; 
 }
 
 .navbar-item label {
-    margin-right: 0.625rem; /* Adjusted from 10px */
+    margin-right: 0.625rem; 
     font-weight: bold;
 }
 
 .navbar-item select {
-    padding: 0.3125rem; /* Adjusted from 5px */
-    border-radius: 0.25rem; /* Adjusted from 4px */
+    padding: 0.3125rem; 
+    border-radius: 0.25rem; 
     border: 1px solid #ccc;
+}
+
+@media(max-width:768px){
+    .dropdown-menu{
+        width:60vw;
+        /* flex-direction:row; */
+    }
+    .dropdown-item{
+        flex-direction:row;
+    }
 }
