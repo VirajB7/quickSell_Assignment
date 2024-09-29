@@ -1,0 +1,102 @@
+.display-button-wrapper {
+    position: relative;
+   
+}
+
+.display-button {
+    display:flex;
+    background-color: white;
+    /* color: white; */
+    justify-content: space-evenly;
+    align-items:center;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem; /* Adjusted from 4px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    padding: 0.1rem; /* Adjusted from 8px */
+    cursor: pointer;
+    font-size: 0.7rem; /* Adjusted from 12px */
+}
+
+#display-icon{
+    font-size: 0.3rem; /* Adjusted from 12px */
+    margin-right: 0.3rem; /* Adjusted from 5px */
+}
+
+.display-button:hover {
+    /* background-color: #0056b3; */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 2.5rem; /* Adjusted from 40px */
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Adjusted from 0px 8px 16px */
+    border: 1px solid #ddd;
+    z-index: 10; 
+    padding: 0.625rem; /* Adjusted from 10px */
+    width:18vw;
+    display:flex;
+    flex-direction:column;
+    
+    /* align-items:center; */
+    border-radius: 1rem;
+}
+
+.dropdown-item {
+    display:flex;
+    justify-content:space-between;
+    padding:0.1rem 0.2rem;
+    font-size: 0.85rem; /* Adjusted from 14px */
+    margin-bottom: 0.25rem; /* Adjusted from 10px */
+    color: #5d5d5d;
+}
+
+#grouping,#sorting{
+    border-radius: 0.25rem; /* Adjusted from 4px */
+    width:8vw;
+}
+
+.dropdown-item label {
+    margin-right: 0.625rem; /* Adjusted from 10px */
+}
+
+.dropdown-item select {
+    padding: 0.3125rem; /* Adjusted from 5px */
+    font-size: 0.75rem; /* Adjusted from 14px */
+}
+
+.display-navbar {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Adjusted from 0 2px 4px */
+    z-index: 1000;
+    padding: 0.5rem 1rem; /* Adjusted from 10px 20px */
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 75rem; /* Adjusted from 1200px */
+    margin: 0 auto;
+}
+
+.navbar-item {
+    margin-right: 1.25rem; /* Adjusted from 20px */
+}
+
+.navbar-item label {
+    margin-right: 0.625rem; /* Adjusted from 10px */
+    font-weight: bold;
+}
+
+.navbar-item select {
+    padding: 0.3125rem; /* Adjusted from 5px */
+    border-radius: 0.25rem; /* Adjusted from 4px */
+    border: 1px solid #ccc;
+}

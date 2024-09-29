@@ -1,0 +1,134 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    
+    width: 17vw;
+    height:16vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:0.3rem;
+}
+
+/* Card styles */
+.card {
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    padding: 0.6rem; 
+    display: flex;
+    flex-direction: column; 
+    height: auto; 
+    max-width: 100%; 
+    
+}
+
+.card-top, .card-middle, .card-bottom {
+    width: 100%; /* Full width */
+    display: flex;
+    /* flex-direction:column; */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 0.3rem; 
+}
+
+.card-top {
+    justify-content: space-between; /* Space between the ticket ID and user */
+}
+
+#ticketID {
+    font-size: 0.75rem; /* Font size for ticket ID */
+    color: #666; /* Grey color */
+}
+
+#person-photo {
+    font-size: 0.75rem; /* Font size for user name */
+    color: #333; /* Darker grey for contrast */
+}
+
+.card-middle {
+     gap:0.4rem;/* Stack status and title vertically */
+     /* height:50%; */
+     /* background-color: bisque; */
+}
+
+.ticket-status {
+    margin-bottom:0.1rem;
+    font-size: 0.5rem; /* Font size for status */
+   
+    align-items:center;
+    justify-content:center;
+    display:flex;
+}
+
+
+    .middle-text {
+        font-size: 0.8rem; /* Set the font size */
+        font-weight: bold; /* Optional styling */
+        margin-left: 0.5rem; /* Space to the left */
+        overflow: hidden; /* Hide overflow content */
+        display: -webkit-box; /* Use webkit box model for multi-line */
+        -webkit-box-orient: vertical; /* Specify box orientation */
+        -webkit-line-clamp: 2; /* Limit to 2 lines */
+        max-width: 80%; /* Width of the middle text */
+        text-overflow: ellipsis; /* Add ellipsis */
+    }
+
+.card-bottom {
+    /* justify-content: space-between; */
+    gap:0.4rem;
+    /* background-color: #007bff; */
+}
+
+.bottom1 {
+    border: 1px solid #f2f2f2; /* Border around priority */
+    border-radius: 0.2rem; 
+    padding: 0.1rem 0.2rem; /* Padding inside */
+    font-size: 0.6rem; /* Font size for priority */
+}
+
+.bottom2 {
+    display: flex;
+    align-items: center; /* Center the image and text vertically */
+    border: 1px solid #f2f2f2; /* Border around priority */
+    border-radius: 0.2rem; 
+    padding: 0.1rem 0.2rem;
+}
+
+.bottom2 img {
+    width: 0.8rem; /* Set a fixed width for the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0.3rem; /* Space between icon and text */
+}
+
+#bottom2-p {
+    font-size: 0.75rem; /* Font size for tags */
+    color: #555; /* Darker grey for tags */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .kanban_board {
+        display:grid; /* Stack columns on smaller screens */
+        grid-template-columns: auto;
+        align-items: center; /* Center columns */
+        height: 80%; /* Ensure it still occupies remaining height */
+    }
+}
+
+@media (max-width: 480px) {
+    .kanban_board {
+        flex-direction:row; /* Stack columns on very small screens */
+    }
+
+    .card {
+        margin-bottom: 1rem; /* Space between cards */
+    }
+
+    #ticketID, #bottom2-p {
+        font-size: 0.75rem; /* Smaller font size on very small screens */
+    }
+}
