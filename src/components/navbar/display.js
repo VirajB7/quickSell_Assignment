@@ -23,7 +23,7 @@ const Display = ({ grouping, sorting, handleGroupingChange, handleSortingChange 
       <div className="display-button-wrapper">
         <button className="display-button" onClick={handleButtonClick}>
           <div id="display-icon"><img src={displayIcon} alt="" /></div>
-          <div>Display</div>
+          <div id="display-text">Display</div>
           <div id="down-icon"><img src={downIcon} alt=""/></div>
         </button>
 

@@ -17,13 +17,18 @@
     font-size: 0.7rem; 
 }
 
+
 #display-icon{
     font-size: 0.3rem; 
     margin-right: 0.3rem;
 }
+#display-text{
+    font-weight: bold;
+}
 
 .display-button:hover {
-    /* background-color: #0056b3; */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .dropdown-menu {
@@ -56,6 +61,12 @@
 #grouping,#sorting{
     border-radius: 0.25rem; 
     min-width:8vw;
+    transition:  transform 0.3s ease;
+}
+
+#grouping:hover,#sorting:hover{
+    background-color: #f1f1f1;
+
 }
 
 .dropdown-item label {

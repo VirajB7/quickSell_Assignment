@@ -14,6 +14,8 @@
     margin-bottom:0.3rem;
 }
 
+
+
 /* Card styles */
 .card {
     border-radius: 0.5rem; 
@@ -24,7 +26,12 @@
     flex-direction: column; 
     height: auto; 
     max-width: 100%; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
     
+}
+.card:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
 }
 
 .card-top, .card-middle, .card-bottom {
@@ -47,6 +54,13 @@
 #person-photo {
     font-size: 0.75rem; /* Font size for user name */
     color: #333; /* Darker grey for contrast */
+}
+
+#person-photo img{
+    width: 1.2rem; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Round the image */
+    margin-right: 0.3rem; /* Space between image and text */
 }
 
 .card-middle {
